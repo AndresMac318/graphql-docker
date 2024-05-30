@@ -28,10 +28,12 @@ jobs:
     - name: Build docker image
       run: |
         docker build -t andresmac318/docekr-graphql:0.0.2 .
-    
+        docker build -t andresmac318/docekr-graphql:latest .
+        
     - name: Push docker image
       run: |
         docker push andresmac318/docekr-graphql:0.0.2
+        docker push andresmac318/docekr-graphql:latest
 
       
     # - name: Build the Docker image
